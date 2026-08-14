@@ -1,0 +1,50 @@
+{
+  "sprint": 3,
+  "name": "M3 Management",
+  "goal": "",
+  "startDate": null,
+  "endDate": "2026-09-11T00:00:00Z",
+  "capacityPoints": 10,
+  "milestone": "M3 Management",
+  "repo": "ronaldajusan0/DEMO2",
+  "generatedFrom": "github-issues",
+  "syncedAt": "2026-08-14T12:37:23.900Z",
+  "issues": [
+    {
+      "number": 11,
+      "title": "Staff dashboard (calendar, mark completed/no-show)",
+      "state": "open",
+      "labels": [
+        "feat",
+        "points:5"
+      ],
+      "assignees": [],
+      "milestone": "M3 Management",
+      "estimate": 5,
+      "status": "todo",
+      "acceptance": [
+        "Daily/weekly calendar of own appointments.",
+        "Mark appointment completed or no-show."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/11"
+    },
+    {
+      "number": 12,
+      "title": "Admin: CRUD services & categories",
+      "state": "open",
+      "labels": [
+        "feat",
+        "points:5"
+      ],
+      "assignees": [],
+      "milestone": "M3 Management",
+      "estimate": 5,
+      "status": "todo",
+      "acceptance": [
+        "Create/edit/delete services and categories.",
+        "Changes appear in catalog immediately."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/12"
+    }
+  ]
+}
