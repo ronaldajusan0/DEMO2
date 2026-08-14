@@ -4,11 +4,11 @@
   "goal": "",
   "startDate": null,
   "endDate": "2026-08-28T00:00:00Z",
-  "capacityPoints": 13,
+  "capacityPoints": 19,
   "milestone": "M1 Foundation",
   "repo": "ronaldajusan0/DEMO2",
   "generatedFrom": "github-issues",
-  "syncedAt": "2026-08-14T12:36:59.231Z",
+  "syncedAt": "2026-08-14T12:37:11.140Z",
   "issues": [
     {
       "number": 1,
@@ -64,6 +64,42 @@
         "Passwords hashed with argon2/bcrypt."
       ],
       "url": "https://github.com/ronaldajusan0/DEMO2/issues/3"
+    },
+    {
+      "number": 4,
+      "title": "Service catalog API (list/detail/filter)",
+      "state": "open",
+      "labels": [
+        "feat",
+        "points:3"
+      ],
+      "assignees": [],
+      "milestone": "M1 Foundation",
+      "estimate": 3,
+      "status": "todo",
+      "acceptance": [
+        "GET /api/services lists and filters by category/price/duration.",
+        "GET /api/services/:id returns detail."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/4"
+    },
+    {
+      "number": 5,
+      "title": "Service catalog UI (browse + filter)",
+      "state": "open",
+      "labels": [
+        "feat",
+        "points:3"
+      ],
+      "assignees": [],
+      "milestone": "M1 Foundation",
+      "estimate": 3,
+      "status": "todo",
+      "acceptance": [
+        "Services grouped by category.",
+        "Filter by category, price, duration."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/5"
     }
   ]
 }
