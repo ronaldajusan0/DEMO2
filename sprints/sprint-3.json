@@ -4,11 +4,11 @@
   "goal": "",
   "startDate": null,
   "endDate": "2026-09-11T00:00:00Z",
-  "capacityPoints": 10,
+  "capacityPoints": 16,
   "milestone": "M3 Management",
   "repo": "ronaldajusan0/DEMO2",
   "generatedFrom": "github-issues",
-  "syncedAt": "2026-08-14T12:37:23.900Z",
+  "syncedAt": "2026-08-14T12:37:35.880Z",
   "issues": [
     {
       "number": 11,
@@ -45,6 +45,42 @@
         "Changes appear in catalog immediately."
       ],
       "url": "https://github.com/ronaldajusan0/DEMO2/issues/12"
+    },
+    {
+      "number": 13,
+      "title": "Admin: CRUD staff & assign services",
+      "state": "open",
+      "labels": [
+        "feat",
+        "points:3"
+      ],
+      "assignees": [],
+      "milestone": "M3 Management",
+      "estimate": 3,
+      "status": "todo",
+      "acceptance": [
+        "Create/edit/deactivate staff.",
+        "Assign services to staff (many-to-many)."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/13"
+    },
+    {
+      "number": 14,
+      "title": "Admin: view/override all bookings",
+      "state": "open",
+      "labels": [
+        "feat",
+        "points:3"
+      ],
+      "assignees": [],
+      "milestone": "M3 Management",
+      "estimate": 3,
+      "status": "todo",
+      "acceptance": [
+        "List all bookings with filters.",
+        "Manually create/edit/cancel any booking."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/14"
     }
   ]
 }
