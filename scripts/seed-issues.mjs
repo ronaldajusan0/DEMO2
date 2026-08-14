@@ -56,16 +56,30 @@ function ensureLabel(repo, name, color) {
   }
 }
 
+function toIsoDue(dueOn) {
+  if (!dueOn) return null;
+  // GitHub requires ISO 8601 datetime; accept date-only and pad it.
+  return /^\d{4}-\d{2}-\d{2}$/.test(dueOn) ? `${dueOn}T00:00:00Z` : dueOn;
+}
+
 function ensureMilestone(repo, title, dueOn) {
   if (DRY) return console.error(`[dry] milestone ${title}`);
   // gh has no first-class milestone create; use the REST API.
   const body = [`-f`, `title=${title}`, `-f`, `state=open`];
-  if (dueOn) body.push("-f", `due_on=${dueOn}`);
+  const due = toIsoDue(dueOn);
+  if (due) body.push("-f", `due_on=${due}`);
   try {
     gh(["api", `repos/${repo}/milestones`, ...body], { stdio: "pipe" });
     console.error(`milestone + ${title}`);
-  } catch {
-    /* likely exists */
+  } catch (e) {
+    const msg = (e.stderr || "") + (e.stdout || "");
+    // "already_exists" is fine; anything else is a real error worth surfacing.
+    if (/already_exists/i.test(msg)) {
+      console.error(`milestone = ${title} (exists)`);
+    } else {
+      console.error(`milestone FAILED ${title}: ${msg.trim() || e.message}`);
+      throw e;
+    }
   }
 }
 
