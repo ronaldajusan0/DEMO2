@@ -4,11 +4,11 @@
   "goal": "",
   "startDate": null,
   "endDate": "2026-09-11T00:00:00Z",
-  "capacityPoints": 10,
+  "capacityPoints": 13,
   "milestone": "M4 Notifications & reports",
   "repo": "ronaldajusan0/DEMO2",
   "generatedFrom": "github-issues",
-  "syncedAt": "2026-08-14T12:37:35.880Z",
+  "syncedAt": "2026-08-14T12:37:51.401Z",
   "issues": [
     {
       "number": 15,
@@ -45,6 +45,24 @@
         "No-show rate and staff utilization."
       ],
       "url": "https://github.com/ronaldajusan0/DEMO2/issues/16"
+    },
+    {
+      "number": 17,
+      "title": "Client account: history + rebook",
+      "state": "open",
+      "labels": [
+        "feat",
+        "points:3"
+      ],
+      "assignees": [],
+      "milestone": "M4 Notifications & reports",
+      "estimate": 3,
+      "status": "todo",
+      "acceptance": [
+        "View upcoming and past appointments.",
+        "One-click rebook of a past service."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/17"
     }
   ]
 }
