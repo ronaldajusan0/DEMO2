@@ -1,20 +1,23 @@
 {
   "sprint": 1,
-  "name": "Foundation & Booking Core",
-  "goal": "A guest can book an available appointment end-to-end.",
-  "startDate": "2026-08-18",
-  "endDate": "2026-08-29",
-  "capacityPoints": 46,
-  "milestone": "M1/M2",
+  "name": "M1 Foundation",
+  "goal": "",
+  "startDate": null,
+  "endDate": "2026-08-28T00:00:00Z",
+  "capacityPoints": 13,
+  "milestone": "M1 Foundation",
   "repo": "ronaldajusan0/DEMO2",
   "generatedFrom": "github-issues",
-  "syncedAt": null,
+  "syncedAt": "2026-08-14T12:36:59.231Z",
   "issues": [
     {
       "number": 1,
       "title": "Project scaffolding (frontend + backend + CI)",
       "state": "open",
-      "labels": ["chore"],
+      "labels": [
+        "chore",
+        "points:3"
+      ],
       "assignees": [],
       "milestone": "M1 Foundation",
       "estimate": 3,
@@ -29,7 +32,10 @@
       "number": 2,
       "title": "Database schema + migrations (core entities)",
       "state": "open",
-      "labels": ["feat"],
+      "labels": [
+        "feat",
+        "points:5"
+      ],
       "assignees": [],
       "milestone": "M1 Foundation",
       "estimate": 5,
@@ -44,7 +50,10 @@
       "number": 3,
       "title": "Auth: register, login, JWT, password reset",
       "state": "open",
-      "labels": ["feat"],
+      "labels": [
+        "feat",
+        "points:5"
+      ],
       "assignees": [],
       "milestone": "M1 Foundation",
       "estimate": 5,
@@ -55,114 +64,6 @@
         "Passwords hashed with argon2/bcrypt."
       ],
       "url": "https://github.com/ronaldajusan0/DEMO2/issues/3"
-    },
-    {
-      "number": 4,
-      "title": "Service catalog API (list/detail/filter)",
-      "state": "open",
-      "labels": ["feat"],
-      "assignees": [],
-      "milestone": "M1 Foundation",
-      "estimate": 3,
-      "status": "todo",
-      "acceptance": [
-        "GET /api/services lists and filters by category/price/duration.",
-        "GET /api/services/:id returns detail."
-      ],
-      "url": "https://github.com/ronaldajusan0/DEMO2/issues/4"
-    },
-    {
-      "number": 5,
-      "title": "Service catalog UI (browse + filter)",
-      "state": "open",
-      "labels": ["feat"],
-      "assignees": [],
-      "milestone": "M1 Foundation",
-      "estimate": 3,
-      "status": "todo",
-      "acceptance": [
-        "Services grouped by category.",
-        "Filter by category, price, duration."
-      ],
-      "url": "https://github.com/ronaldajusan0/DEMO2/issues/5"
-    },
-    {
-      "number": 6,
-      "title": "Staff working hours + time-off model & API",
-      "state": "open",
-      "labels": ["feat"],
-      "assignees": [],
-      "milestone": "M2 Booking core",
-      "estimate": 3,
-      "status": "todo",
-      "acceptance": [
-        "Staff set weekly working hours and breaks.",
-        "One-off time off blocks slots."
-      ],
-      "url": "https://github.com/ronaldajusan0/DEMO2/issues/6"
-    },
-    {
-      "number": 7,
-      "title": "Availability engine (slot computation)",
-      "state": "open",
-      "labels": ["feat"],
-      "assignees": [],
-      "milestone": "M2 Booking core",
-      "estimate": 8,
-      "status": "todo",
-      "acceptance": [
-        "Returns only free slots.",
-        "Respects staff hours, time off, duration, and buffer.",
-        "Unit tests cover overlap, buffer, boundary cases."
-      ],
-      "url": "https://github.com/ronaldajusan0/DEMO2/issues/7"
-    },
-    {
-      "number": 8,
-      "title": "Booking API (create/reschedule/cancel, no double-book)",
-      "state": "open",
-      "labels": ["feat"],
-      "assignees": [],
-      "milestone": "M2 Booking core",
-      "estimate": 8,
-      "status": "todo",
-      "acceptance": [
-        "Concurrent booking of same slot: exactly one success, other gets 409.",
-        "Reschedule and cancel respect policy window.",
-        "Concurrency test included."
-      ],
-      "url": "https://github.com/ronaldajusan0/DEMO2/issues/8"
-    },
-    {
-      "number": 9,
-      "title": "Booking flow UI (select -> slot -> confirm)",
-      "state": "open",
-      "labels": ["feat"],
-      "assignees": [],
-      "milestone": "M2 Booking core",
-      "estimate": 5,
-      "status": "todo",
-      "acceptance": [
-        "Guest can book without account.",
-        "Slot picker shows only available times.",
-        "Confirmation screen after booking."
-      ],
-      "url": "https://github.com/ronaldajusan0/DEMO2/issues/9"
-    },
-    {
-      "number": 10,
-      "title": "Confirmation email on booking",
-      "state": "open",
-      "labels": ["feat"],
-      "assignees": [],
-      "milestone": "M2 Booking core",
-      "estimate": 3,
-      "status": "todo",
-      "acceptance": [
-        "Booking sends confirmation email.",
-        "Email includes service, staff, date/time, cancel link."
-      ],
-      "url": "https://github.com/ronaldajusan0/DEMO2/issues/10"
     }
   ]
 }
