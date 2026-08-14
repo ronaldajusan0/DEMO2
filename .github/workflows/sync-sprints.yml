@@ -1,0 +1,42 @@
+name: sync-sprints
+
+# Regenerate sprints/*.json from GitHub issues whenever issues change,
+# and on manual dispatch. Commits the result back to main if it changed.
+
+on:
+  issues:
+    types: [opened, edited, closed, reopened, labeled, unlabeled, milestoned, demilestoned, assigned, unassigned]
+  milestone:
+    types: [created, edited, closed, opened, deleted]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Regenerate sprint files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/sync-sprints.mjs --repo "${{ github.repository }}"
+
+      - name: Commit changes if any
+        run: |
+          if [ -n "$(git status --porcelain sprints/)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add sprints/
+            git commit -m "chore: sync sprints from issues"
+            git push
+          else
+            echo "No sprint changes."
+          fi

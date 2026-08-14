@@ -1,0 +1,119 @@
+{
+  "sprint": 2,
+  "name": "Management & Notifications",
+  "goal": "Staff and admin manage the salon; clients get reminders.",
+  "startDate": "2026-09-01",
+  "endDate": "2026-09-12",
+  "capacityPoints": 29,
+  "milestone": "M3/M4",
+  "repo": "ronaldajusan0/DEMO2",
+  "generatedFrom": "github-issues",
+  "syncedAt": null,
+  "issues": [
+    {
+      "number": 11,
+      "title": "Staff dashboard (calendar, mark completed/no-show)",
+      "state": "open",
+      "labels": ["feat"],
+      "assignees": [],
+      "milestone": "M3 Management",
+      "estimate": 5,
+      "status": "todo",
+      "acceptance": [
+        "Daily/weekly calendar of own appointments.",
+        "Mark appointment completed or no-show."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/11"
+    },
+    {
+      "number": 12,
+      "title": "Admin: CRUD services & categories",
+      "state": "open",
+      "labels": ["feat"],
+      "assignees": [],
+      "milestone": "M3 Management",
+      "estimate": 5,
+      "status": "todo",
+      "acceptance": [
+        "Create/edit/delete services and categories.",
+        "Changes appear in catalog immediately."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/12"
+    },
+    {
+      "number": 13,
+      "title": "Admin: CRUD staff & assign services",
+      "state": "open",
+      "labels": ["feat"],
+      "assignees": [],
+      "milestone": "M3 Management",
+      "estimate": 3,
+      "status": "todo",
+      "acceptance": [
+        "Create/edit/deactivate staff.",
+        "Assign services to staff (many-to-many)."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/13"
+    },
+    {
+      "number": 14,
+      "title": "Admin: view/override all bookings",
+      "state": "open",
+      "labels": ["feat"],
+      "assignees": [],
+      "milestone": "M3 Management",
+      "estimate": 3,
+      "status": "todo",
+      "acceptance": [
+        "List all bookings with filters.",
+        "Manually create/edit/cancel any booking."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/14"
+    },
+    {
+      "number": 15,
+      "title": "Reminder notifications (24h / 2h)",
+      "state": "open",
+      "labels": ["feat"],
+      "assignees": [],
+      "milestone": "M4 Notifications & reports",
+      "estimate": 5,
+      "status": "todo",
+      "acceptance": [
+        "Reminders scheduled at 24h and 2h before appointment.",
+        "Cancellation/reschedule updates scheduled reminders."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/15"
+    },
+    {
+      "number": 16,
+      "title": "Reports: bookings, no-show rate, utilization",
+      "state": "open",
+      "labels": ["feat"],
+      "assignees": [],
+      "milestone": "M4 Notifications & reports",
+      "estimate": 5,
+      "status": "todo",
+      "acceptance": [
+        "Bookings per period and revenue estimate.",
+        "No-show rate and staff utilization."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/16"
+    },
+    {
+      "number": 17,
+      "title": "Client account: history + rebook",
+      "state": "open",
+      "labels": ["feat"],
+      "assignees": [],
+      "milestone": "M4 Notifications & reports",
+      "estimate": 3,
+      "status": "todo",
+      "acceptance": [
+        "View upcoming and past appointments.",
+        "One-click rebook of a past service."
+      ],
+      "url": "https://github.com/ronaldajusan0/DEMO2/issues/17"
+    }
+  ]
+}
